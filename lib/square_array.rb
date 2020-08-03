@@ -1,8 +1,5 @@
-def square_array(array)
-  arr = []
-  array.each { |i| arr + i ** 2 }
-  arr
+def square_array(ary)
+  a = Array.new(ary.length)
+  ary.each_index { |i| a[i] = ary[i] * ary[i] }
+  a
 end
-
-my_arr = [1, 2]
-p square_array(my_arr) #=> [1, 4]
